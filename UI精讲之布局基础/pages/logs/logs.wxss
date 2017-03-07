@@ -1,0 +1,59 @@
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: indigo;
+
+
+  /*已定位的父级元素*/
+  /*position: absolute;
+  top: 200rpx;
+  left: 100rpx;*/
+
+
+
+  /*container未定位*/
+  margin-top: 200rpx;
+  margin-left: 150rpx;
+     
+}
+
+.item {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: gold;
+  border: 1px solid #fff;
+ 
+}
+
+
+/*相对*/
+.item2 {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: gold;
+  border: 1px solid #fff;
+
+
+ position: relative;
+ left: 50rpx;
+ top:50rpx;
+
+}
+
+/*绝对*/
+.item3 {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: gold;
+  border: 1px solid #fff;
+
+
+ position: absolute;
+ left: 50rpx;
+ top:50rpx;
+
+}

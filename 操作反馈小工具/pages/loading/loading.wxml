@@ -1,0 +1,7 @@
+<!--pages/loading/loading.wxml-->
+<text>加载事件</text>
+ <button type="primary" bindtap="click">按钮loading</button>
+
+ <loading hidden="{{hidden}}" bindchange="loadingChage" >
+ 加载中.....
+ </loading>

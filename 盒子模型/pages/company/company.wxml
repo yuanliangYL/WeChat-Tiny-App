@@ -1,0 +1,118 @@
+<!-- -- company.wxml -->
+<View class="page">
+
+  <View class="page-section">
+     <text>View Demo</text>
+   </View>
+
+
+<!--视图布局方向-->
+   <View class="page-section">
+      <view>flex_direction:默认布局方向</view>
+      <view>
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+ <View class="page-section">
+      <view>flex_direction:row</view>
+      <view style ="display:flex; flex-direction:row">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+
+ <View class="page-section">
+      <view>flex_direction:column</view>
+      <view style ="display:flex; flex-direction:column">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+<!--主轴布局格式-->
+    <View class="page-section">
+      <view>flex_direction:row,justify-content:flex-start</view>
+      <view style ="display:flex; flex-direction:row ;justify-content:flex-start">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+    <View class="page-section">
+      <view>flex_direction:row,justify-content:flex-end</view>
+      <view style ="display:flex; flex-direction:row;justify-content:flex-end">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+    <View class="page-section">
+      <view>flex_direction:row,justify-content:center</view>
+      <view style ="display:flex; flex-direction:row;justify-content:center">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+    <View class="page-section">
+      <view>flex_direction:row,justify-content:space-between</view>
+      <view style ="display:flex; flex-direction:row;justify-content:space-between">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+    <View class="page-section">
+      <view>flex_direction:row,justify-content:space-around</view>
+      <view style ="display:flex; flex-direction:row;justify-content:space-around">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+<!--align-items-->
+ <View class="page-section">
+      <view>flex_direction:row,align-items:flex-start</view>
+      <view style ="display:flex;height:150px; flex-direction:row;justify-content:space-around;align-items:flex-start">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+ <View class="page-section">
+      <view>flex_direction:row,align-items:center</view>
+      <view style ="display:flex;height:150px; flex-direction:row;justify-content:space-around;align-items:center">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+
+ <View class="page-section">
+      <view>flex_direction:row,align-items:flex-end</view>
+      <view style ="display:flex;height:150px; flex-direction:row;justify-content:space-around;align-items:flex-end">
+         <view class = "flex-item bg_green"></view>
+         <view class = "flex-item bg_red" ></view>
+         <view class = "flex-item bg_blue"></view>
+      </view>
+   </View>
+
+</View>

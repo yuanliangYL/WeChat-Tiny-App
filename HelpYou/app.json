@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/company/company",
+    "pages/projects/projects",
+    "pages/projects/projectDetail",
+     "pages/user/user",
+     "pages/user/history"
+  ],
+
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "帮帮您",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "color":"#cdcdcd",
+    "selectedColor":"#e4da19",
+    "list": [{
+      "pagePath": "pages/company/company",
+      "text": "公司介绍",
+      "iconPath":"images/company_unselect.png",
+      "selectedIconPath":"images/company_selected.png"
+    }, {
+      "pagePath": "pages/projects/projects",
+      "text": "项目介绍",
+      "iconPath":"images/project_unselected.png",
+      "selectedIconPath":"images/project_selected.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "个人中心",
+      "iconPath":"images/user_unselect.png",
+      "selectedIconPath":"images/user_selected.png"
+    }]
+  },
+
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+  "debug": true
+}

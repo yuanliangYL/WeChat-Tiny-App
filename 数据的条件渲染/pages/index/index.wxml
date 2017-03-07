@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--条件：-->
+<View wx:if="{{length>5}}"> 大于5 </View>
+<View wx:elif="{{length>2}}"> 大于2 </View>
+<View wx:else> 小于2 </View>
+
+<!--字符串拼接-->
+<View > {{"hello" +"  " + name}} </View>
+
+
+<!--block判断-->
+ <block wx:if="{{isShow ? true : false}}">
+ <View>view0</View>
+ <View>view1</View>
+ <View>view2</View>
+ </block>
+
+<!--if与hidden的区别-->
+<view id= "abc" style="display:block">view3</view>
+
+<!--display:none不显示，但是存在：查看输出控制台-->
+<view id= "abcd" style="display:none">view4</view>
+
+
+</view>
+
+<!--if与hidden的区别：
+wx:if 是蓝渲染lazy render 一般初始化时候判断
+
+hidden、display：none 实现渲染，但是不显示 频繁切换使用
+
+-->

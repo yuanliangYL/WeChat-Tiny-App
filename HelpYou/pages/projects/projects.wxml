@@ -1,0 +1,74 @@
+
+<!--index.wxml-->
+
+<!--swiper使用时一定要注意父组件的布局，否则会不显示-->
+<!--<view class="section">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>-->
+
+<!--第二部分-->
+<view class="section">
+
+  <!--提示部分-->
+  <view class="header">
+    <text class="header-left">精品推荐</text>
+    <text class="text-all">全部精品</text>
+  </view>
+
+  <!--内容部分-->
+  <view class="content">
+
+    <!--each-item-->
+    <view class="content-item" wx:for="{{contentItems}}" bindtap="checkdetail">
+      <image src="{{item}}" mode="scaleToFill" />
+      <view class="content-item-text">这里是文字内容...</view>
+    </view>
+  </view>
+</view>
+<view class="container">
+
+  <!--第三分部-->
+  <view class="section bgView">
+
+    <!--提示部分-->
+    <view class="header">
+      <text class="header-left" >项目介绍</text>
+      <text class="text-all">全部项目</text>
+    </view>
+
+    <!--list-item-->
+    <view class="listview-item" wx:for="{{listviewItem}}" bindtap="checkdetail">
+
+      <!--each-item-->
+      <view class="listview-item-image">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1487825805821&di=dc764b988878c8b219117bf8313685f7&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201406%2F20%2F20140620195938_8UfLz.jpeg" mode="scaleToFill"
+        class="listview-item-image-img"></image>
+        <image src="../../images/clickToBuy.jpg" class="avatar"></image>
+      </view>
+
+      <!--each-item-text-->
+      <view class="listview-item-text">
+
+        <!--标题-->
+        <view class="listview-item-text-title">
+          <text>我是标题部分</text>
+        </view>
+
+        <!--内容-->
+        <view class="listview-item-text-detail">
+          <text>迪丽热巴（Dilraba），中国内地女演员，1992年6月3日出生于新疆乌鲁木齐，毕业于上海戏剧学院。2013年出演个人首部电视剧《阿娜尔罕》，饰演女主角阿娜尔罕，该剧在央视一套播... </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<modal title="温馨提示" confirm-text="知道啦"  hidden="{{modalhidden}}" bindconfirm="modalfirm" bindcancel="modalcancel">
+  成为VIP,才能查看项目具体详情喔~
+</modal>
+<!--cancel-text="取消"-->

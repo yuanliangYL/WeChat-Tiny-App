@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container">
+   <button type="primary" bindtap="click">按钮modal</button>
+
+   <modal title="标题" confirm-text="确认"  hidden="{{modalhidden}}" bindconfirm="modalfirm" bindcancel="modalcancel">
+   这是对话框内容
+   </modal>
+
+
+</view>

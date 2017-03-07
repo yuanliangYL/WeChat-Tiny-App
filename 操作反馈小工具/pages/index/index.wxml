@@ -1,0 +1,12 @@
+
+<!--index.wxml-->
+<view class="container">
+  <button type="primary" bindtap="click">按钮action-sheet</button>
+  <action-sheet hidden="{{actionhidden}}" bindchange="actionsheetchange">
+    <action-sheet-item class="item" data-name="item1" bindtap="itemclick" >item1</action-sheet-item>
+    <action-sheet-item class="item" data-name="item2" bindtap="itemclick">item2</action-sheet-item>
+    <action-sheet-item class="item" data-name="item3" bindtap="itemclick">item3</action-sheet-item>
+    <action-sheet-item class="item" data-name="item4" bindtap="itemclick">item4</action-sheet-item>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+</view>

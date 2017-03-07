@@ -1,0 +1,20 @@
+
+<!--logs.wxml-->
+
+<!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+<swiper indicator-dots=" false " autoplay="false "  bindchange="listenSwiper " >
+
+<!--swiper-item只能包含一个节点再多会自动删除-->
+ <swiper-item>
+ <view style="background: red; height: 150px ">
+ </view>
+ </swiper-item>
+ <swiper-item>
+  <view style="background: green; height: 150px ">
+  </view>
+ </swiper-item>
+ <swiper-item>
+  <view style="background: blue; height: 150px ">
+  </view>
+ </swiper-item> 
+</swiper>

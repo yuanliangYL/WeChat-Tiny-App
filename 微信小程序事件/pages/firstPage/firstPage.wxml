@@ -1,0 +1,26 @@
+<!--index.wxml-->
+
+<!--冒泡事件-->
+<view class="View1" bindtap="view1Click" id="View1" data-title="新闻标题" data-id="100" >
+    View1
+      <view class="View2" bindtap="view2Click" id="View2">
+          view22
+            <view class="View3" bindtap="view3Click" id="View3">
+               View333
+            </view>
+      </view>
+</view>
+
+<!--bind 与 catch 绑定事件 -->
+<!--catch绑定事件不会出现事件传递，避免冒泡-->
+<view class="View4" bindtap="view1Click" >
+    View1
+      <view class="View2" bindtap="view2Click">
+          view22
+            <view class="View3" catchtap="view3Click">
+               View333
+            </view>
+      </view>
+</view>
+
+<!--事件的对象，事件中的参数e-->

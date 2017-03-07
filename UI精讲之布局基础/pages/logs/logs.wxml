@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+<view><text>/*相对定位的元素是相对自身进行定位，参照物是自己*/</text></view>
+
+<view><text>/*绝对定位的元素是相对离他最近的一个已定位的父级元素进行定位的*/</text></view>
+
+
+<view class="container"> 
+
+  <view class="item" >
+    1
+  </view>
+
+
+  <view class="item2" >
+    2
+  </view>
+
+
+  <view class="item">
+    3
+  </view>
+
+
+  <view class="item3">
+  4
+  </view>
+
+</view>

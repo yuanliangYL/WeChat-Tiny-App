@@ -1,0 +1,46 @@
+
+<!-- -- company.wxml -->
+
+<!-- 底部背景-->
+<View class="container " disable-scroll="true">
+
+
+
+  <!--背景图-->
+  <image src="{{backgroundImg}}" style="width: 100%; height: 100%; background-color: #eeeeee;" mode="scaleToFill">
+
+    <!--下方透明背景-->
+    <view class="downView">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="bindchange">
+        <block wx:for="{{netData}}">
+          <swiper-item>
+
+            <!--下方内容部分-->
+            <view class="contentView">
+
+              <!--图片视图部分-->
+              <view class="imageView">
+                <image src="{{item.head_img}}"></image>
+              </view>
+
+              <!--文字视图部分-->
+              <view class="textView">
+                <view>
+                  <text class="text1">{{item.title}}：</text>
+                </view>
+                <view class="textDetail">
+                  <text class="text2">{{item.detail}}</text>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </image>
+</View>
+
+<!--加载图....-->
+<!--<loading hidden="{{hidden}}" bindchange="loadingChage">
+  加载中.....
+</loading>-->

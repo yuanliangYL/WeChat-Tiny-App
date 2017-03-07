@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--数据绑定-->
+<view> {{message}} </view>
+
+<!--列表渲染:array 从index.js里面的data.array 里面取得数组数据 ,item就是数组迭代每一项内容-->
+<view wx:for="{{array}}" > {{item}} </view>
+
+<!--条件渲染-->
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+
+
+<!--模板：name="staffName"模板名称-->
+<!--定义一个模板：模板并不会在界面上显示出来-->
+<template name="staffName">
+<!--以下是模板内容-->
+  <view> 
+  <!--注意此处字段的一致性-->
+    name: {{name}}, age: {{age}}
+  </view>
+</template>
+
+<!--使用一个模板：is="要使用的模板的名字    data:表示数据从哪里来的 -->
+<template is="staffName" data="{{...yuanliang}}"></template>
+<template is="staffName" data="{{...lisi}}"></template>
+
+
+<!--事件-->
+<button type="primary" bindtap="add"> {{count}} </button>
+
+</view>

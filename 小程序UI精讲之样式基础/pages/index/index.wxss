@@ -1,0 +1,95 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: sandybrown;
+
+}
+
+/*margin(上右下左)外边距，padding内边距*/
+#userinfo-avatar {
+  background-color: green;
+  width: 228rpx;
+  height: 228rpx;
+  /*min-width max-width:*//*min-height max-height*/
+
+  margin: 20px 60rpx;
+  padding:20rpx;
+
+  /*边框*/
+  /*border-radius: 20%;*/
+  /*border-width:
+  border-color:
+   border-style:*/
+  border-width: 10px;
+  border-color: red;
+  border-style: outset;
+  /*border:10px solid #ddd      简写方式*/
+}
+
+
+/*:active点击效果*/
+/*focus输入框变化*/
+#userinfo-avatar:active {
+  background-color: fuchsia;
+  width: 118rpx;
+  height: 118rpx;
+  margin: 20px 60rpx;
+  padding:20rpx;
+  border-width: 10px;
+  border-color: red;
+  border-style: outset;
+
+}
+
+
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+view [bindtap="bindViewTap"][bindtap="bindViewTap"] {
+  background-color: darkred;
+}
+
+/*text:color/font-size/font-weight/font-family*/
+
+
+
+/*一、样式的属性：尺寸、背景、边框、边距、文本、其他（列表、内容、表格...)*/
+
+
+
+/*二、样式选择器：
+1、基本选择器：
+  a、类选择器.name{}       -----class
+  b、ID选择器#name{}       -----id
+  c.元素选择器name{}       -----元素名称（Image)
+  d.通配选择器*{}          -----所有控件元素同时设置（wxss暂时无法识别）
+  e.包含选择器p c{}         -----.parent child{}  包含多级子层
+  f.子元素选择器 p >c{}     -----最直系子层
+  g.邻近兄弟元素选择器 c + c{}    -----g与h对于微信暂时不可以用
+  h.通用兄弟元素选择器c ~ c{}
+
+
+
+
+2、属性选择器：
+     ele[attr]       -------元素[属性名]
+     ele[attr="value"] 
+     ele[attr~="value"]    ------可能包含
+
+3：伪类选择器：（很重要）
+  a.动态伪类选择器（:link  ,  :visited  ,  :hover ,   :active ,  :focus ）
+  b.状态伪类选择器(:enabled,  :disabled,   :checked)   -----按钮常用的  
+  c.选择伪类选择器(:first-child   :last-child   :nth-child()   :nth-last-child()  :nth-of-type()   :nth-last-of-type()  :first-of-type  :last-of-type  :only-child  :only-of-type )
+  d.空内容伪类选择器(:empty)
+  e.否定伪类选择器(:not)
+  f.伪元素(::first-line    ::first-letter   ::before   ::selection  )
+*/

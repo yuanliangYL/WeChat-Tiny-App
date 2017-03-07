@@ -1,0 +1,16 @@
+
+<!--index.wxml-->
+<view class="container">
+  <input placeholder="请输入订单号" bindinput="inputText" />
+  <button type="primary" bindtap="btnClick">查询</button>
+
+
+
+  <scroll-view  scroll-y="true" style="height: 300px;" >
+    <View class="viewItem" wx:for="{{expressInfo.result.list}}">
+      {{item.status}} [{{item.time}}]
+    </View>
+  </scroll-view>
+
+
+</view>

@@ -1,0 +1,24 @@
+<!--list.wxml-->
+<view class="container">
+   
+   <button>按钮（无设置)</button>
+
+   <button size="default">按钮（size:default)</button>
+   <button size="mini">按钮（size:mini)</button>
+
+
+   <button size="default" type="warn">按钮（size:default,type:warn)</button>
+   <button size="default" type="primary">按钮（size:default,type:"primary")</button>
+
+
+<!--镂空-->
+   <button size="mini" type="primary"  plain="ture">按钮（size:default,type:"primary",plain="ture")</button>
+
+
+<!--禁用-->
+   <button size="mini" type="primary"  plain="ture" disabled = "ture">按钮（disabled)</button>
+
+<!--加载-->
+<button size="mini" type="primary"  plain="false" loading = "ture" bindtap="doloading">loading)</button>
+
+</view>

@@ -1,0 +1,25 @@
+
+<!--pages/user/history.wxml-->
+<view class="container">
+  <view class="backView" wx:for="{{itemData}}">
+
+    <!--左侧图像视图-->
+    <view class="imageView">
+      <image src="{{item.img}}" />
+    </view>
+
+    <!--右侧内容视图-->
+    <view class="rightView">
+
+      <!--title-->
+      <view class="titleView">
+        <text>{{item.title}}</text>
+      </view>
+
+      <!--detail-->
+      <view class="detailView">
+        <text>{{item.detail}}</text>
+      </view>
+    </view>
+  </view>
+</view>

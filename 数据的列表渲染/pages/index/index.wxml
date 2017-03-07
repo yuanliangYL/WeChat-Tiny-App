@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+
+	<!-- items是数组  index是数组下标  item是每一项 -->
+	<view wx:for="{{items}}">
+		{{index}} : {{item.message}}
+	</view>
+		
+		<!--用idx替换了缺省的index  用myItem替换了缺省的item -->
+	<view wx:for="{{items}}" wx:for-index="idx" wx:for-item="myItem">
+		{{idx}} : {{myItem.message}}
+	</view>
+
+	<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+		<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+			{{i}} * {{j}} = {{i * j}}			
+		</view>
+	</view>
+
+	<block wx:for="{{[1, 2, 3]}}">
+		<view>view10</view>
+		<view>view11</view>
+	</block>
+</view>

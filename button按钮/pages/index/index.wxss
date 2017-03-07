@@ -1,0 +1,7 @@
+
+.view-item {
+   padding: 20px;
+   background-color: limegreen;
+   border-radius:5px;
+   margin:5px;
+}

@@ -1,0 +1,40 @@
+<view class="container">
+
+  <view class="item" style="order:4">
+    1
+  </view>
+
+
+  <view class="item" style="order:3" >
+    2
+  </view>
+
+
+  <view class="item i3">
+    3
+  </view>
+
+
+  <view class="item" style="order:2">
+  4
+  </view>
+
+  <!--<view class="item">
+   1
+  </view>
+
+    <view class="item">
+    2
+  </view>
+
+    <view class="item">
+   3
+  </view>
+
+
+    <view class="item">
+    4
+  </view>-->
+
+
+</view>

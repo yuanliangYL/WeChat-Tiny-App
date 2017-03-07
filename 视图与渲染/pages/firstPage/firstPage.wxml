@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<!--include相当于全部复制-->
+<include src="../templates/header"/>
+
+<!--template格式与import连用-->
+<!--import需要用is来指定导入的模块-->
+<import src="../templates/footer"/>
+
+
+<view class="container">
+
+<!--按钮-->
+<button type="default" hover-class="other-button-hover"> default </button>
+<button type="primary" bindtap="changtext"> {{text}} </button>
+
+
+<!--文本:以及数据绑定-->
+ <text>这里是文本内容......</text>
+ <text>{{text}}</text>
+
+<!--条件判断标签-->
+<!--条件为真显示视图-->
+<text wx:if="{{true}}">{{text}}</text>
+<text wx:if="{{isShow ? true : false}}">{{text}}</text>
+
+
+<button wx:if="{{isShow ? true : false}}" type="primary" bindtap="showButton"> 按钮的显示与隐藏wx:if </button>
+<button wx:else type="primary" bindtap="showButton"> 按钮的显示与隐藏wx:else </button>
+
+
+<!--循环标签-->
+<view wx:for="{{['aaa','bbb','ccc']}}" >循环内容{{item}}</view>
+
+<view wx:for="{{array}}" >新闻数据{{index}}:{{item}}</view>
+
+<!--动态更改列表的值-->
+<button type="primary" bindtap="deletearr"> 点击删除列表的值 </button>
+
+
+
+<template is="footer1" />
+<!--循环标签的别名设置-->
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName}}
+</view>
+
+
+<!--模板的使用-->
+<template is="footer2" data="{{text:'导入设置内容...'}}" />
+
+</view>
+

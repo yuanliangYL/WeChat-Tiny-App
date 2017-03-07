@@ -1,0 +1,57 @@
+/**index.wxss**/
+
+/*成功解决页面高度不能全屏问题！！！*/
+
+page {
+  height: 100%;
+}
+
+/*flex布局方式练习笔记*/
+
+/*display: flex默认横向*/
+
+/*flex容器的属性*/
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: indigo;
+  display: flex;
+  /*flex-direction: column;*//*flex-direction: row;
+  flex-wrap: wrap-reverse;   nowrap/wrap/wrap-reverse*/
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  /*align-items: stretch;     元素无高度，stretch会拉伸元素填充视图*/      /*baseline:让元素以元素所在行里面的文字的底线进行对齐*/
+}
+
+/*rpx会根据手机尺寸动态改变*/
+
+/*flex元素的属性*/
+
+.item {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: gold;
+  border: 1px solid #fff;
+  /*flex-grow: 1;*//*flex-shrink:1;*//*flex-grow:多余空间元素放大比例，默认值为0;
+    flex-shrink:多余空间元素缩小比例，默认值为1*/    /*flex-basis元素在主轴上占据的空间*/     /*order定义元素的排列顺序*/
+  flex: 0 1 50px;
+  order: 3;
+}
+
+.i3 {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 250px;
+  /*flex-grow: 2;*//*flex-shrink:10;*//*flex是flex-grow、flex-shrink、flex-basis的简写*/
+  order: 1;
+  /*align-self定义元素自身的对齐方式*/
+  align-self: flex-end;
+}
+
+
+
+/**************************相对定位于绝对定位布局方式**************************/
+/*相对定位的元素是相对自身进行定位，参照物是自己*/
+/*绝对定位的元素是相对离他最近的一个已定位的父级元素进行定位的*/

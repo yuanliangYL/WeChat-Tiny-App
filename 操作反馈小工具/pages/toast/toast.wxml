@@ -1,0 +1,7 @@
+<!--pages/toast/toast.wxml-->
+<text>消息提示框</text>
+ <button type="primary" bindtap="click">按钮toast</button>
+
+ <toast hidden="{{hidden}}" bindchange="toastChage" duration="1000">
+ 默认
+ </toast>

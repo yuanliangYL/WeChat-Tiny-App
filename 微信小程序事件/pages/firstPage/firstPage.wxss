@@ -1,0 +1,25 @@
+/**index.wxss**/
+.View1 {
+    height: 500rpx;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.View2 {
+    height: 400rpx;
+    width: 80%;
+    background-color: red;
+}
+
+.View3 {
+    height: 300rpx;
+    width: 60%;
+    background-color: yellow;
+}
+
+.View4 {
+    height: 500rpx;
+    width: 100%;
+    background-color: green;
+    margin-top: 50rpx;
+}

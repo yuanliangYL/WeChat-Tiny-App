@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+
+<!-- 定义一个模板 -->
+<template name="myTemplate"> 
+	<view>
+		<text>name : {{name}} age : {{age}}</text>
+		<text>addr : {{addr}}</text>
+	</view>
+</template>
+
+<!-- 使用一个模板 is表示使用模板的名字 -->
+<template is="myTemplate" data="{{name : 'yang', age : 30, addr: '北京'}}"> </template>
+<template is="myTemplate" data="{{name : 'jian', age : 40, addr: '上海'}}"> </template>
+
+
+<!-- x y a三个变量是js代码里面得到 -->
+<template is="myTemplate" data="{{name : x, age : y, addr:  a }}"> </template>
+
+<!--key一致可以缩写-->
+<template is="myTemplate" data="{{name, age , addr}}"> </template>
+
+<!-- obj1展开      ...表示遍历对象的所有元素-->
+<template is="myTemplate" data="{{...obj1}}"> </template>
+<template is="myTemplate" data="{{...obj2}}"> </template>
+<template is="myTemplate" data="{{...obj3}}"> </template>
+
+<template is="myTemplate" data="{{...person_objs[0]}}"> </template>
+<template is="myTemplate" data="{{...person_objs[1]}}"> </template>
+
+
+
+<!--奇偶判断-->
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+
+<block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>
+
+
+</view>
+

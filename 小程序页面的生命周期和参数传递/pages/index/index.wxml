@@ -1,0 +1,31 @@
+
+<!--index.wxml-->
+<view class="container">
+
+<!--页面跳转方式一-->
+  <view bindtap="itemClick">
+    <text class="user-motto">文章1</text>
+  </view>
+
+
+<!--页面跳转方式二-->
+<!--hover-class 	String 	navigator-hover 	指定点击时的样式类，当hover-class="none"时，没有点击态效果-->
+<!--open-type 	String 	navigate 	可选值 'navigate'、'redirect'、'switchTab'，对应于wx.navigateTo、wx.redirectTo、wx.switchTab的功能-->
+ <navigator url="../logToNavi/logToNavi?id=100&title=标题" hover-class="navigator-hover" open-type="navigate">
+ <view >
+    <text class="user-motto">文章2</text>
+  </view>
+</navigator>
+  
+
+
+  <view>
+    <text class="user-motto">文章3</text>
+  </view>
+
+
+
+  <view>
+    <text class="user-motto">文章4</text>
+  </view>
+</view>

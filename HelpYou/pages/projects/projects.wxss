@@ -1,0 +1,146 @@
+/**index.wxss**/
+
+page {
+  height: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.section-swiper {
+  background-color: #e6e6e6;
+  border-bottom: 5px solide #e6e6e6;
+}
+
+.section {
+  margin: 10rpx 0 10rpx 0;
+  background-color: ghostwhite;
+  border-bottom: 5px solide #e6e6e6;
+}
+
+.header {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rpx;
+  background-color: ghostwhite;
+  height: 60rpx;
+}
+
+.header-left{
+   margin-left: 10rpx;
+}
+
+.text-all {
+  color: green;
+  font-size: 10px;
+  margin-right: 10rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-item {
+  width: 46%;
+  height: 250rpx;
+  background-color: #e6e6e6;
+  margin: 10rpx;
+  position: relative;
+}
+
+.content-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rpx;
+}
+
+/*重点样式展示*/
+
+.content-item-text {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 12px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /*颜色渐变效果*/
+  height: 125rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center
+ 
+}
+.content-item-text text{
+  margin: 1.5%;
+}
+.listview-item {
+  height: 500rpx;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.listview-item-image {
+  height: 350rpx;
+  width: 100%;
+  margin-top: 5rpx;
+  position: relative;
+}
+
+.listview-item-image-img {
+  height: 100%;
+  width: 100%;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40rpx;
+  right: 30rpx;
+}
+
+.listview-item-text {
+  height: 150rpx;
+  width: 100%;
+  background-color: ghostwhite;
+}
+
+.listview-item-text-title {
+
+  height: 35%;
+  display: flex;
+ align-items: center;
+  
+}
+
+.listview-item-text-title text{
+
+ margin-left: 10rpx;
+  
+}
+
+
+.listview-item-text-detail {
+  font-size: 10px;
+  color: #999;
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 10rpx;
+  margin-bottom: 5rpx;
+}
+
+.bgView {
+  background-color: #e6e6e6;
+}

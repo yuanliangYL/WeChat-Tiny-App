@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/toast/toast",
+    "pages/loading/loading"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "action-sheet"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "modal"
+    },{
+      "pagePath": "pages/toast/toast",
+      "text": "toast"
+    }, {
+      "pagePath": "pages/loading/loading",
+      "text": "loading"
+    }]
+  }
+}

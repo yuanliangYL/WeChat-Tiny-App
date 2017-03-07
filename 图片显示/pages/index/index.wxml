@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class="flex item">
+
+	<view class="item-left">
+		<image src="../images/wechatHL.png"></image>
+	</view>
+
+
+	<view class="item-middle">
+		<view><text class="title">标题我是第一级的</text></view>
+		<view><text class="sub-title">子标题我是第二级的</text></view>
+		<view><text class="actor">演员表我是第三季的</text></view>
+	</view>
+
+
+	<view class="item-right">
+		<view><text class="score">9.7</text></view>
+		<view><text class="action">购票</text></view>
+	</view>
+
+
+</view>
+
+
+<view class="flex item">
+	<view class="item-left">
+		<image src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"></image>
+	</view>
+	<view class="item-middle">
+		<view><text class="title">标题我是第一级的</text></view>
+		<view><text class="sub-title">子标题我是第二级的</text></view>
+		<view><text class="actor">演员表我是第三季的</text></view>
+	</view>
+
+
+	<view class="item-right">
+		<view><text class="score">3.7</text></view>
+		<view><text class="action">购票</text></view>
+	</view>
+</view>
+
+</view>
+

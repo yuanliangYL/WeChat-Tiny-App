@@ -1,0 +1,28 @@
+
+<!--pages/projects/projectDetail.wxml-->
+  <!--提示部分-->
+  <view class="header">
+    <text class="header-left">项目模块简介</text>
+  </view>
+
+  <!--每一个模块的item-->
+  <view class="itemView" wx:for="{{itemData}}">
+    <!--图片内容-->
+    <image src="{{item.img}}"> </image>
+
+    <!--文字介绍-->
+    <view class="item-textView">
+      <text class="header-title">{{item.title}}</text>
+      <text class="item-textView-text">{{item.detail}}</text>
+    </view>
+  </view>
+  
+<!--项目综合信息-->
+    <view class="header">
+    <text class="header-left">项目综合信息</text>
+  </view>
+
+<view class="produceView bottom-border" wx:for="{{synthesizeInfo}}">
+    <text class="textfont produceView-leftText" >{{item.title}}</text>
+    <text class="historyView-rightText textcolor">{{item.detail}}</text>
+  </view>

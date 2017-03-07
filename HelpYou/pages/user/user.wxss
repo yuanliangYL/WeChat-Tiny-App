@@ -1,0 +1,187 @@
+/* pages/user/user.wxss */
+
+page {
+  height: 100%;
+}
+
+.userinfo {
+  width: 100%;
+  height: 20%;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #dadce5;
+}
+
+.avatar {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 85rpx;
+}
+
+.nikname {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.nikname-name {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.nikname-count {
+  height: 50%;
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  color: #909090;
+}
+
+/*vip部分*/
+.vipview {
+  width: 100%;
+  height: 10%;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+}
+
+.vipimg {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vipimg image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+}
+
+.viptext {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 15rpx;
+}
+
+.viptext-isvip {
+  height: 50%;
+  display: flex;
+  align-items: center;
+   margin-left: 15rpx;
+}
+
+.viptext-price {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #909090;
+   margin-left: 15rpx;
+}
+
+
+/*历史记录部分*/
+.historyView {
+  width: 100%;
+  height: 8%;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #dadce5;
+}
+
+.historyView text {
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+.historyView image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+}
+
+/*缓存部分*/
+.cachesView {
+  width: 100%;
+  height: 8%;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cachesView text{
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+
+.historyView-rightText {
+  margin-right: 20rpx;
+  color: #909090;
+  font-size: 29rpx;
+}
+
+.aboutus {
+  padding: 20rpx;
+  color: #909090;
+  font-size: 30rpx;
+}
+
+/*介绍部分*/
+.produceView {
+  width: 100%;
+  height: 8%;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produceView-leftText {
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.bottom-border {
+  border-bottom: 1rpx solid #dadce5;
+}
+
+.textcolor {
+  color:#909090;
+  font-size: 29rpx;
+}
+
+.textfont {
+  font-size: 33rpx;
+  margin-right: 20rpx;
+}

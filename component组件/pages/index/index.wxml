@@ -1,0 +1,35 @@
+
+<!--index.wxml-->
+<view class="container">
+
+<!--swiper-->
+
+
+  <swiper indicator-dots="{{dots}}" autoplay="true" interval="2000" duration="1000" style="width:355px">
+    <swiper-item>
+      <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3010015189,3081271788&fm=21&gp=0.jpg" class="slide-image" width="355" height="150" />
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" class="slide-image" width="355" height="150" />
+    </swiper-item>
+    <swiper-item>
+      <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </swiper>
+
+  <swiper indicator-dots="{{dots}}" autoplay="true" interval="2000" duration="1000" style="width:355px">
+    <swiper-item>
+      <view clsaa="viewitem1"/>
+    </swiper-item>
+    <swiper-item>
+      <view clsaa="viewitem2">
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view clsaa="viewitem3">
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+</view>

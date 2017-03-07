@@ -1,0 +1,66 @@
+
+<!--pages/user/user.wxml-->
+
+<!-- 底部背景-->
+<view class="container ">
+
+  <!--头部视图-->
+  <view class="userinfo">
+
+    <!--头像-->
+    <view class="avatar">
+      <image src="{{userImg}}" mode="scaleToFill" />
+    </view>
+
+    <!--用户名账户-->
+    <view class="nikname">
+      <view class="nikname-name">
+        {{userName}}
+      </view>
+      <view class="nikname-count">
+        账号：{{userCount}}
+      </view>
+    </view>
+  </view>
+
+  <!--vip办理部分-->
+  <view class="vipview">
+
+    <!--vip标示图-->
+    <view class="vipimg">
+      <image src="../../images/vip.png" mode="scaleToFill" />
+    </view>
+
+    <!--用户名账户-->
+    <view class="viptext" bindtap="toBuy" >
+      <view class="viptext-isvip">
+        {{isvip}}
+      </view>
+      <view class="viptext-price" >
+        仅需10元即可成为VIP会员，查看所有项目详情！
+      </view>
+    </view>
+  </view>
+
+  <!--查看历史部分-->
+  <navigator class="historyView" url="../user/history">
+    <text class="textfont" >查看历史</text>
+    <image src="../../images/arror.png" mode="scaleToFill" />
+  </navigator>
+
+  <!--清除缓存数据-->
+  <view class="cachesView" bindtap="clearCaches" >
+    <text class="textfont" >清除缓存数据</text>
+    <text class="historyView-rightText">{{caches}}kb</text>
+  </view>
+
+  <!--关于部分-->
+  <view class="aboutus">关于帮帮您</view>
+
+  <!--具体信息-->
+  <view class="produceView bottom-border" wx:for="{{aboutUs}}">
+    <text class="textfont produceView-leftText" >{{item.title}}</text>
+    <text class="historyView-rightText textcolor">{{item.detail}}</text>
+  </view>
+
+</view>

@@ -1,0 +1,11 @@
+<!--list.wxml-->
+<view class="container">
+   
+   <view>{{clickMsg}}</view>
+
+<!--标识类信息：id="view0" data-hi = "data-view0" data-qf = "data-qf0"-->
+   <view id="view0" data-hi = "data-view0" data-qf = "data-qf0" class="view-item" bindtap="clickMe">点击View0</view>
+
+   <view id="view1" data-hi = "data-view1" data-qf = "data-qf0" class="view-item" bindtap="clickMe">点击View1</view>
+   
+</view>

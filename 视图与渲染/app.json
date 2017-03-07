@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/firstPage/firstPage"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "视图与渲染",
+    "navigationBarTextStyle":"black",
+    "backgroundTextStyle":"dark",
+    "backgroundColor" : "#f00",
+    "enablePullDownRefresh" : true
+  }
+}

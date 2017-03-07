@@ -1,0 +1,56 @@
+/* pages/user/history.wxss */
+
+page {
+  height: 100%;
+}
+
+.backView {
+  width: 100%;
+  height: 20%;
+  background-color: ghostwhite;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.imageView {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageView image {
+  height: 98%;
+  width: 96%;
+  border-radius: 10rpx;
+}
+
+.rightView {
+  width: 55%;
+  height: 100%;
+}
+
+.titleView {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.detailView {
+    height: 70%;
+    width: 100%;
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} 
+
+.detailView text {
+    margin: 5rpx;
+    color:#909090;
+    font-size: 25rpx;
+}

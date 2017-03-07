@@ -1,0 +1,29 @@
+page{
+  height: 100%;
+}
+.scroll-view-item {
+  height: 100%;
+  width: 100%;
+}
+
+.bc_green{
+  background-color: green;
+}
+
+.bc_red{
+  background-color: red;
+}
+
+.bc_yellow{
+  background-color: yellow;
+}
+
+.bc_blue{
+  background-color: blue;
+}
+
+/*::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  color: transparent;
+}*/

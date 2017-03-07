@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--scroll-view竖向滚动一定要设置高度-->
+<!--scroll-top="{{scrollTop}}"-->
+ <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="scrollToUpper" bindscrolltolower="bindscrolltolower"  bindscroll="bindscroll" upper-threshold="100"  scroll-into-view="{{scrollToView}}">
+ 
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+
+<view style="height:100px;width:200px;background-color:red;margin-bottom:50px;" bindtap="click">clickMe</view>
+
+   <!--<scroll-view scroll-x="true" style="width: 100%;height:100%">
+    <view id="green" class="scroll-view-item bc_green"></view>
+    <view id="red"  class="scroll-view-item bc_red"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow"></view>
+    <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>-->
+
+
+</view>

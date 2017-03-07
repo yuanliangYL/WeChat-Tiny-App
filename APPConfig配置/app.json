@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": " APP配置",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"ture"
+  },
+
+
+  "tabBar": {
+    "color":"#dddddd",
+    "selectedColor":"#d81e06",
+    "list": [{
+      "pagePath": "pages/test/test",
+      "text": "首页",
+      "iconPath":"images/home.png",
+      "selectedIconPath":"images/home_s.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "副页",
+      "iconPath":"images/car.png",
+      "selectedIconPath":"images/car_s.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath":"images/star.png",
+      "selectedIconPath":"images/star_s.png"
+    }]
+  },
+
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "connectSocket": 1000,
+    "uploadFile": 10000
+  },
+
+   "debug": true
+}

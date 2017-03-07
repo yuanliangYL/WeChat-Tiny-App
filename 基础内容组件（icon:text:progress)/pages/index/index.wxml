@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="45"/>
+  </block>
+
+
+
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="45" color="{{item}}"/>
+  </block>
+  
+</view>

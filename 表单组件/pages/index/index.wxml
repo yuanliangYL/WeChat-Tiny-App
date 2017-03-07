@@ -1,0 +1,64 @@
+<!--index.wxml-->
+ <view class="section">
+  <view class="section__title">地区选择器</view>
+  <picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+
+
+
+
+<view class="section">
+  <view class="section__title">时间选择器</view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+</view>
+
+
+
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+
+
+
+
+<view class="section section_gap">
+  <text class="section__title">设置left/right icon</text>
+  <view class="body-view">
+    <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">设置step</text>
+  <view class="body-view">
+    <slider bindchange="slider2change" step="5"/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">显示当前value</text>
+  <view class="body-view">
+    <slider bindchange="slider3change" show-value/>
+  </view>
+</view>
+
+<view class="section section_gap">
+  <text class="section__title">设置最小/最大值</text>
+  <view class="body-view">
+    <slider bindchange="slider4change" min="50" max="200" show-value/>
+  </view>
+</view>
